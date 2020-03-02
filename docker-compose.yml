@@ -1,0 +1,9 @@
+postgresql:
+        image: postgres:11.4-alpine
+        container_name: postgres-octo
+        ports:
+            - "5432:5432"
+        environment:         
+            - POSTGRES_DB=octo_database
+            - POSTGRES_USER=octo
+            - POSTGRES_PASSWORD=octopassword
